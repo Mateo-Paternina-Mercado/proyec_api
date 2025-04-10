@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Games App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Games App</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header>
-        <h1>Videojuegos</h1>
-        <p>Consulta y guarda tus juegos favoritos.</p>
-        <button id="favorites-toggle-btn">Ver Favoritos</button>
-    </header>
+  <header>
+    <h1>Videojuegos</h1>
+    <p>Consulta y guarda tus juegos favoritos.</p>
+    <button id="open-favorites-btn">Ver Favoritos</button>
+  </header>
 
-    <div class="game-list" id="game-list">
-        <!-- Los juegos se mostrarán aquí -->
+  <div class="game-list" id="game-list">
+    <!-- Los juegos se mostrarán aquí -->
+  </div>
+
+  <!-- Modal para favoritos -->
+  <div id="favorites-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal" class="close-btn">&times;</span>
+      <div id="favorites-container"></div>
     </div>
+  </div>
 
-    <div class="favorites-list" id="favorites-list" style="display: none;">
-        <!-- Los juegos favoritos se mostrarán aquí -->
-        <h2>Favoritos</h2>
-        <div id="favorites-container"></div>
-    </div>
+  <footer>
+    <p>Proyecto de Videojuegos - Hecho con 💻 y JavaScript</p>
+  </footer>
 
-    <footer>
-        <p>Proyecto de Videojuegos - Hecho con 💻 y JavaScript</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
+  <script src="favorites.js"></script>
 </body>
 </html>
-
-
-
-<style></style>
