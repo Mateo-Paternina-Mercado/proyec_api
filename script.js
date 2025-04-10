@@ -73,10 +73,10 @@ let isPlaying = true;
 toggleBtn.addEventListener('click', () => {
     if (isPlaying) {
         music.pause();
-        toggleBtn.textContent = '▶️';
+        toggleBtn.textContent = '▶ play';
     } else {
         music.play();
-        toggleBtn.textContent = '⏸';
+        toggleBtn.textContent = '⏸ stop';
     }
     isPlaying = !isPlaying;
 });

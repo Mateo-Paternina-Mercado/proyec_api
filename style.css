@@ -240,3 +240,29 @@
     }
   }
   
+
+  .music-controls {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #toggle-music {
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #007a7a, #00ffc3);
+    border: none;
+    border-radius: 8px;
+    color: #0f0f1a;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffc3;
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  #toggle-music:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffc3;
+  }
+  
